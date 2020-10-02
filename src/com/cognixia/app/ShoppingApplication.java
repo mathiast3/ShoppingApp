@@ -37,7 +37,7 @@ public class ShoppingApplication {
 				login();
 				break;
 			case 3:
-
+				buyItem();
 				break;
 			case 4:
 
@@ -48,6 +48,11 @@ public class ShoppingApplication {
 			}
 		}
 		input.close();
+	}
+
+	private static void buyItem() {
+		// TODO Auto-generated method stub
+
 	}
 
 	private static void register() {
