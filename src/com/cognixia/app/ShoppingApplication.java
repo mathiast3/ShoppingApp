@@ -10,6 +10,7 @@ public class ShoppingApplication {
 
 	static Scanner input = new Scanner(System.in);
 	static ShoppingController controller = new ShoppingController();
+	private static boolean loggedIn = false;
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -52,6 +53,12 @@ public class ShoppingApplication {
 
 	private static void buyItem() {
 		// TODO Auto-generated method stub
+		if (loggedIn) {
+			controller.displayItems();
+			int choice = input.nextInt();
+		} else {
+			System.out.println("Please Login before buying an item");
+		}
 
 	}
 
